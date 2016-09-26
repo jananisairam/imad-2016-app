@@ -1,11 +1,11 @@
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    font-family: Jokerman;
+    background-color: blue;
+    margin-top: 65px;
 }
 
 .center {
-    text-align: center;
+    text-align: left;
 }
 
 .text-big {
@@ -13,10 +13,10 @@ body {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight:normal;
 }
 
 .img-medium {
-    height: 200px;
+    height: 400px;
 }
 
