@@ -20,12 +20,12 @@ var articlOne={
             </p>`
 };
 function createTemplate(data){
-    var title=data.title;
-    var date= data.date;
-    var heading=data.heading;
-    var content=data.content;
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
     
-var htmltemplate=
+var htmlTemplate =
 `    <head>
         <title>${title} </title>
         <meta name="viewport" content="width-device-width,initial-scale-1" />
