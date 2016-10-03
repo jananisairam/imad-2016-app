@@ -11,14 +11,14 @@ var articles = {
     heading: 'Article 1',
     date:'sep 5,2016',
     content: `<p>
-                This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
-            </p>
-            <p>
-                This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
-            </p>
-            <p>
-                This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
-            </p>`
+                This the content for my first article. This the content for my first article. This the content for my first article.
+             </p>
+              <p>
+                This the content for my first article. This the content for my first article. This the content for my first article.
+             </p>
+              <p>
+                This the content for my first article. This the content for my first article. This the content for my first article.
+              </p>`
 },
 'article-two':
 {
