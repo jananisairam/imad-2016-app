@@ -20,6 +20,36 @@ var articlOne =
                 This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
             </p>`
 };
+var articleTwo = 
+{
+   title: 'Article 2 Janani Kannan',
+    heading: 'Article 2',
+    date:'sep 10,2016',
+    content: `<p>
+                This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
+            </p>
+            <p>
+                This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
+            </p>
+            <p>
+                This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
+            </p>` 
+};
+var articleThree =
+{
+     title: 'Article 3 Janani Kannan',
+    heading: 'Article 3',
+    date:'sep 15,2016',
+    content: `<p>
+                This  is the content for my third article.This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
+            </p>
+            <p>
+                This the content for my third article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
+            </p>
+            <p>
+                This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article. This the content for my first article.
+            </p>`
+};
 function createTemplate(data){
     var title = data.title;
     var date = data.date;
