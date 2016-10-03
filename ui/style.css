@@ -1,15 +1,15 @@
 body {
     font-family: Jokerman;
-    background-color:pink;
+    background-color: grey;
     margin-top: 65px;
 }
 
 .center {
-    text-align: left;
+    text-align: center;
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 500%;
 }
 
 .bold {
@@ -19,6 +19,7 @@ body {
 .img-medium {
     height: 400px;
 }
+
 .container {
     max-width: 600px;
     margin: 0 auto;
