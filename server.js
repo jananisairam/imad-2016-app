@@ -1,99 +1,28 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
-
-var app = express();
-app.use(morgan('combined'));
-var articles = {
-'article-one':
-{
-    title: 'Article 1 Janani Kannan',
-    heading: 'Article 1',
-    date:'sep 5,2016',
-    content: `<p>
-                This the content for my first article. This the content for my first article. This the content for my first article.
-             </p>
-              <p>
-                This the content for my first article. This the content for my first article. This the content for my first article.
-             </p>
-              <p>
-                This the content for my first article. This the content for my first article. This the content for my first article.
-              </p>`
-},
-'article-two':
-{
-   title: 'Article 2 Janani Kannan',
-    heading: 'Article 2',
-    date:'sep 10,2016',
-    content: `<p>
-                This the content for my second article. This the content for my second article.
-            </p>` 
-},
-'article-three':
-{
-     title: 'Article 3 Janani Kannan',
-    heading: 'Article 3',
-    date:'sep 15,2016',
-    content: `<p>
-                This  is the content for my third article.This the content for my third article. This the content for my third article.
-            </p>`
-}
-};
-function createTemplate(data){
-    var title = data.title;
-    var date = data.date;
-    var heading = data.heading;
-    var content = data.content;
-    
-var htmlTemplate =
-`    <head>
-        <title>${title} </title>
-        <meta name="viewport" content="width-device-width,initial-scale-1" />
+<!doctype html>
+<html>
+    <head>
         <link href="/ui/style.css" rel="stylesheet" />
-        </head>
-    
+    </head>
     <body>
-    <div class="container">
-        <div>
-            <a href="/">Home</a>
+    <div class ="container">
+        <div class="center">
+            <img id='madi' src="http://media2.intoday.in/indiatoday/images/stories/di-app-3_647_042416114950.jpg" class="img-medium"/>
         </div>
-        <h3>${heading} </h3>
-        <div> ${date} </div>
-        <div> ${content} </div>
-    </div>
+        <hr/>
+        <h4>Personal</h4>
+        <div>
+            Hi,I am janani(future techie).Daughter of Government Employees.
+        </div>
+        <hr/>
+        <h4>Professional</h4>
+        <div>
+            I am currently doing my B.Tech in Sri Sairam Engineering College.I've a great passion on developping mobile applications.IMAD offers me a great platform for knowing more about webapps and its working.
+        </div>
+        <br>
+        <hr/>
+        <div class ="footer">        </div>
+    </div> 
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
     </body>
-</html>`
-;
-return htmlTemplate;
-}
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-app.get('/:articleName', function(req,res){
-    //articleName == article-one
-    //articles == {} content object for article one
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
-});
-app.get('/article-two', function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three', function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-
-
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
-});
+</html>
