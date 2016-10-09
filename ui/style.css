@@ -1,6 +1,6 @@
 body {
     font-family: Ravie;
-    background-color: grey;
+    background-color: white;
     margin-top: 65px;
 }
 
@@ -17,15 +17,15 @@ body {
 }
 
 .img-medium {
-    height: 400px;
+    height: 300px;
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
-    color: brown;
+    color: black;
     padding-top: 100px;
-    font-family: ravie;
+    font-family: TimesNewRoman;
     padding-right: 20px;
     padding-left: 20px;
 }
