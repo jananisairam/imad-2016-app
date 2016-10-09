@@ -99,12 +99,19 @@ app.get('/ui/style.css', function (req,res){
     res.sendFile(path.join(__dirname,'ui','style.css'));
 });
 
-app.get('/ui/main.js', function (req,res){
+app.get('/ui/main.js', function (req, res){
     res.sendFile(path.join(__dirname,'ui','main.js'));
 });
 
-app.get('/ui/madi.png', function (req,res){
+app.get('/ui/madi.png', function (req, res){
     res.sendFile(path.join(__dirname,'ui','madi.png'));
+});
+var names = [];
+app.get('/submit-name', function (req, res){
+    //get the name from request
+    var name;//TODO
+    names.push(name);
+    res.send(names);//TODO
 });
 
 
