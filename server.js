@@ -70,7 +70,7 @@ var articles = {
             <a href="/">HomePage</a>
             </div>
             <hr/>
-            <h3> ${Heading} </h3>
+            <h3> ${heading} </h3>
             <div> ${date} </div>
             <div> ${content} </div>
             </div>
