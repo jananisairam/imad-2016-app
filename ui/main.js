@@ -3,13 +3,22 @@ var button = document.getElementById('counter');
 var counter = 0;
 button.onclick = function () {
   
-  //make request to counter eendpoint
-  
+  //create the request object
+  var request = new XMLHttpRequest(); 
   //capture the response and store it a variable
-  
-  //render a variable in correct span
-  counter = counter + 1;
-  var span = document.getElementById('count');
-  span.innerHTML = counter.toString();
-    
+  request.onreadystatechange = function() {
+    if(request.readystate === XMLHttpRequest.DONE) {
+        //TAKE SOME ACTIONS
+        if(request.status === 200) {
+            var counter = request.responseText;
+            var span = document.getElementById('count');
+            span.innerHTML = counter.toString();
+            
+        }
+    }
+    //not done yet
+  };
+    //make the request
+    request.open('GET', 'http://jananisairam.imad.hasura-app.io/counter', true);
+    request.send(null);
 };
