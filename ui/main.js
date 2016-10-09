@@ -22,3 +22,10 @@ button.onclick = function () {
     request.open('GET', 'http://jananisairam.imad.hasura-app.io/counter', true);
     request.send(null);
 };
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+button.onclick = function() {
+    //maje a request to server and send the name
+    //capture a list of name and render it in a list.
+};
